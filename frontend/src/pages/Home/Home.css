@@ -1,0 +1,149 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #121212;
+    color: #e0e0e0;
+}
+
+/* Home Container */
+.home-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Title and Logout Button */
+.home-title {
+    text-align: center;
+    color: #bb86fc;
+    margin-top: 20px;
+}
+
+.logout-btn {
+    background: #ff3d41;
+    margin-left: 30px;
+}
+
+/* Year Addition Section */
+.year-addition {
+    margin-bottom: 20px;
+}
+
+/* Input for New Year */
+.new-year-input {
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 16px;
+    width: calc(100% - 22px);
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border: 1px solid #333;
+    border-radius: 4px;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.new-year-input:focus {
+    border-color: #bb86fc;
+    background-color: #2a2a2a;
+    outline: none;
+}
+
+/* Button Styles */
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #bb86fc;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #3700b3;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Subject List Container */
+.subject-container {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* Year Title */
+.year-title {
+    margin-top: 0;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Subject List */
+.subject-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* Subject List Item */
+.subject-item {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border: 1px solid #333;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Delete Button in Subject List */
+.delete-btn {
+    background-color: #cf6679;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.delete-btn:hover {
+    background-color: #b00020;
+}
+
+/* Subject Input Field */
+.subject-input {
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 16px;
+    width: calc(100% - 22px);
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border: 1px solid #333;
+    border-radius: 4px;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.subject-input:focus {
+    border-color: #bb86fc;
+    background-color: #2a2a2a;
+    outline: none;
+}
+
+/* Add Subject Button */
+.add-subject-btn {
+    background-color: #6200ea;
+}
+
+.add-subject-btn:hover {
+    background-color: #3700b3;
+}
