@@ -147,3 +147,66 @@ button:active {
 .add-subject-btn:hover {
     background-color: #3700b3;
 }
+.responses-table {
+    margin-top: 30px;
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.responses-table h2 {
+    color: #bb86fc;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #444;
+}
+
+th {
+    background-color: #6200ea;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #333;
+}
+
+button.view-responses-btn {
+    background-color: #6200ea;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-left: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+}
+
+button.view-responses-btn:hover {
+    background-color: #3700b3;
+}
+.save-csv-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    
+    position: relative;
+    align-self: center;
+  }
+  
+  .save-csv-btn:hover {
+    background-color: #45a049;
+  }
+  
