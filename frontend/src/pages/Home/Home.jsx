@@ -22,7 +22,7 @@ const Home = ({ setIsAuthenticated }) => {
   useEffect(() => {
     // Fetch data from backend
     const fetchData = async () => {
-      const res = await axios.get("http://localhost:5000/api/subjects");
+      const res = await axios.get("https://subject-preference-admin.onrender.com/api/subjects");
       setData(res.data);
     };
     fetchData();
@@ -32,13 +32,13 @@ const Home = ({ setIsAuthenticated }) => {
     const subject = subjects[year];
     if (!subject) return alert("Enter a subject name");
 
-    await axios.post("http://localhost:5000/api/subjects", { year, subject });
+    await axios.post("https://subject-preference-admin.onrender.com/api/subjects", { year, subject });
     setSubjects((prev) => ({ ...prev, [year]: "" }));
     setRefresh(!refresh);
   };
 
   const handleDeleteSubject = async (year, subject) => {
-    await axios.delete("http://localhost:5000/api/subjects", { data: { year, subject } });
+    await axios.delete("https://subject-preference-admin.onrender.com/api/subjects", { data: { year, subject } });
     setRefresh(!refresh);
   };
 
@@ -46,7 +46,7 @@ const Home = ({ setIsAuthenticated }) => {
     if (!newYear) return alert("Enter a year");
     if (data.some((entry) => entry.year === newYear)) return alert("Year already exists");
 
-    await axios.post("http://localhost:5000/api/subjects", { year: newYear, subject: "" });
+    await axios.post("https://subject-preference-admin.onrender.com/api/subjects", { year: newYear, subject: "" });
     setNewYear("");
     setRefresh(!refresh);
   };
@@ -54,7 +54,7 @@ const Home = ({ setIsAuthenticated }) => {
   // Fetch faculty preferences when the "View Responses" button is clicked
   const handleViewResponses = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/facultypreferences");
+      const response = await axios.get("https://subject-preference-admin.onrender.com/api/facultypreferences");
       setFacultyPreferences(response.data);
     } catch (error) {
       console.error("Error fetching faculty preferences", error);
